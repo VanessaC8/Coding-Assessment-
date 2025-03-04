@@ -35,9 +35,13 @@ def schedule_ships():
 
 # This function will tell you which bays are aviable for the ships docking time window 
 def list_of_bays():
+    docking_bays = random.chice(docking_bays)
     incoming_ships = random.choice(incoming_ships)
-#This if else statement will go though each time and find one that will be available for the ships docking window 
-    if 
+#This for loop will go through each bay and see which one is open for its time window   
+    for time in incoming_ships:
+        for bays in docking_bay:
+            if 'schedual' == open:
+                print(f'Bay{['bay_id']} is open')   
 
 
 # This function will assign ships a bay based on size and time 
@@ -51,10 +55,25 @@ def assign_bays():
 
 
 
-
 # This function will give the amout of times for each ship so that they leave on time so they dont stay to long and take up space
 def optimized_time():
     incoming_ships = random.choice(incoming_ships)
+    docking_bays = random.chice(docking_bays)
+# This for loop wil go through each incoming ships and get the arrival time and give it the max amout of time it has to stay in that bay
+    for ship in incoming_bays:
+        for bay in docking_bays:
+            if 'arrival_time' & 'departure_time' == docking_bays:
+                print(f"You will be assigned bay {['bay_id']}")
+
+
+# This will run the functions
+schedule_ships()
+list_of_bays()
+assign_bays()
+optimized_time()
+
+        
+            
      
 
 
