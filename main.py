@@ -48,9 +48,9 @@ def list_of_bays():
 def assign_bays():
     incoming_ships = random.choice(incoming_ships)
 # This if else statment will go through all the requierments to assign each ship a bay
-    if (size) & (time) in docking_bays:
+    if ('size') & ('time') in docking_bays:
         print(f"You are assinged bay {docking_bays}")
-    elif (size) & (time) in dockign_bays:
+    elif ('size') & ('time') in dockign_bays:
         print(f"You are assinged bay {docking_bays}")
 
 
