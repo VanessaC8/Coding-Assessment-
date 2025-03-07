@@ -23,7 +23,7 @@ def main():
 # This function will take the schedule of the spaceship and list avalible bays based on the size of the ships
 def schedule_ships():
 # This string will save the bay 
-    incoming_ships = random.choice(incoming_ships)
+    db.incoming_ships = random.choice(incoming_ships)
 # This if else statement will go through each size and tell you which size bays are available 
     if 'Size' == 'small' in db.dockingBays:
         print(f"Docking bays vailable are {{Bay:['bay_id'], Size:['size'], time:['arrival_time'}}.")
